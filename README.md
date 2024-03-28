@@ -1,6 +1,8 @@
 # Leetcode Documentation
 The purpose of this is to document my leetcode journey and provide my own descriptions
 
+Algorithms will mostly be done in Python (im lazy when it comes to coding syntax :( )
+
 # START DATE: 3/28/3034
 
 ## Goals:
