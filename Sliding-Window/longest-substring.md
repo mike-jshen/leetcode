@@ -42,3 +42,17 @@ Every time we encounter a repeat character within the string, we update the left
 
 This would have a runtime of O(n) as extracting and updating the hash value within the loop would only take O(1) time.
 
+```
+def longestSub(s: str) -> int:
+    l = 0
+    cur = {} # store character position in hash
+    result = 0
+    for c , v in enumerate(s):
+
+        if v in cur:
+            l = max(l,cur[v] + 1)
+
+        cur[v] = c
+        result = max(result , c - l)
+    return result + 1
+```
