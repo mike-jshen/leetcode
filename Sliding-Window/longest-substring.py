@@ -1,5 +1,5 @@
 
-def longestSub(self, s: str) -> int:
+def longestSub(s: str) -> int:
     l = 0
     cur = {} # store character position in hash
     result = 0
@@ -14,4 +14,4 @@ def longestSub(self, s: str) -> int:
     
 if __name__ == '__main__':
     string = "teststring"
-    print(longestSub("test"))
+    print(longestSub(string))
