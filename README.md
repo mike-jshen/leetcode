@@ -14,7 +14,7 @@ Algorithms will mostly be done in Python (im lazy when it comes to coding syntax
 
 ## System:
 - Each problem will be put into its respective folder depending on what algorithm is used
-  - Inspiried by the NeetCode Roadmmap
+  - Inspiried by the [NeetCode Roadmap](https://neetcode.io/roadmap)
 - SQL problems will be documented in its own folder
 
 ## Links:
