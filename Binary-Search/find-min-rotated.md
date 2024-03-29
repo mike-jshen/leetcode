@@ -45,6 +45,14 @@ if arr[mid] > arr[r]
 If the first condition is not satisfied, we must then check if the left value is greater than the current mid value.
 We know that the minium must be within the left and mid pointer as the array must start back at its minimum in order for the mid to be less than left pointer.
 
+```
+if arr[mid] < arr[l]
+  r = mid
+  mid = math.floor((left/right)/2)
+```
+
+NOTE: in the case that mid so happens be the minimum value within the array, we still ensapsulate the element by setting ```r = mid```
+
 ![image](https://github.com/mike-jshen/leetcode/assets/68671792/3bcbf90c-232f-41cb-a2e0-903919b600fb)
 
 If none of these conditions are met, that means that
