@@ -95,3 +95,5 @@ def findMin(nums: List[int]) -> int:
     
     return nums[mid]
 ```
+
+Because this is binary search, the worst case scenario would be O(log n) if the pivot is near the middle and the best case would be O(1) if the array is not rotated.
