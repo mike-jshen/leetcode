@@ -55,10 +55,35 @@ arr[l] < arr[mid] < arr[r]
 which means that the array between l and r is in its sorted state. Thus, arr[l] should be the smallest element.
 
 Continuing the first example:
-![image](https://github.com/mike-jshen/leetcode/assets/68671792/53b711db-48cd-4952-b1b7-e601e5afe605)
+![image](https://github.com/mike-jshen/leetcode/assets/68671792/0da73230-8c6e-4e36-b16a-f7c4e8c86cd4)
 
-Finally, the code would look something like this:
+Where in this case, the left and right pointers encapsulate a sub-array: ```[0,1,2]``` so returing the first element of this subarray would be the smallest in the whole array.
+
+Finally, I had accounted for the base case where the array is just one element. This would mean that the only element itself would be the minimum element within the array.
+
+The code would look something like this:
 
 ```
+def findMin(nums: List[int]) -> int:
+  if len(nums) == 1:
+    return nums[0]
 
+  l = 0
+  r = len(nums) - 1
+  mid = math.floor((l+r)/2)
+  while l < r:
+    if nums[mid] > nums[r]:
+      print("increase mid")
+      l = mid + 1
+      mid = math.floor((r+l)/2)
+
+    elif nums[mid] < nums[l]:
+      print("decrease mid")
+      r = mid
+      mid = math.floor((r+l)/2)
+            
+    else:
+      return nums[l]
+    
+    return nums[mid]
 ```
