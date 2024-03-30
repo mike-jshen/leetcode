@@ -1,6 +1,8 @@
 # Longest Consecutive Subsequence 
 https://leetcode.com/problems/longest-consecutive-sequence
 
+[Algorithm Inspiration](https://www.youtube.com/watch?v=P6RZZMu_maU)
+
 ## Intuitive Approach
 
 My initial thoughts upon this solution was to first sort the array itself using ```.sort()``` and then consecutively check to see if the next 
