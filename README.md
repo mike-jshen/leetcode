@@ -20,4 +20,4 @@ Algorithms will mostly be done in Python (im lazy when it comes to coding syntax
 ## Links:
 - [Leetcode](https://leetcode.com/)
 - [HackerRank](https://www.hackerrank.com/)
-- [NeetCode Roadmap](https://neetcode.io/roadmap)
+- [NeetCode](https://neetcode.io)
