@@ -74,9 +74,7 @@ class Solution:
             if c in op:
                 stack.append(c)
             else:
-                if not stack:
-                    return False
-                if brackets[stack[-1]] != brackets[c]:
+                if not stack or brackets[stack[-1]] != brackets[c]:
                     return False
                 stack.pop()
                     
