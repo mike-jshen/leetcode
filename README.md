@@ -21,3 +21,5 @@ Algorithms will mostly be done in Python (im lazy when it comes to coding syntax
 - [Leetcode](https://leetcode.com/)
 - [HackerRank](https://www.hackerrank.com/)
 - [NeetCode](https://neetcode.io)
+- [Repo of Leetcode Challenge](https://github.com/mrinal1704/SQL-Leetcode-Challenge)
+- [Top 50 SQL Leetcode](https://leetcode.com/studyplan/top-sql-50/)
