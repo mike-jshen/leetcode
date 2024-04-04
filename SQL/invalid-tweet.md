@@ -21,6 +21,13 @@ Return the result table in any order.
 ## Using CHAR_LENGTH
 In this question, it is asking to output the rows in which the content length has a character value greater than 15
 
+## LENGTH() VS CHAR_LENGTH()
+[Reference](https://stackoverflow.com/questions/1734334/mysql-length-vs-char-length?rq=1)
+
+Basically, we use CHAR_LENGTH to get the actual character length value as opposed to LENGTH() which only gets 
+the byte length value. This would cause an issue for symbols such as € where the byte length would equal to 3.
+
+
 Thus, we would use the CHAR_LENGTH() function in order to extract the string length and compare it > 15.
 
 Code:
